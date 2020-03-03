@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<title>ValidationForm</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card text-left">
+            <div class="card-header">
+            <strong>Payment for example</strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputCardnumber">Card #</label>
+                        <input type="cardnumber" class="form-control" id="inputCardnumber" placeholder="XXXXXXXXXXXXXX">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputCVC">CVC #</label>
+                        <input type="CVC" class="form-control" id="inputCVC" placeholder="0000">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputamount">Amount $</label>
+                        <input type="Amount" class="form-control" id="inputamount" placeholder="Amount">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputFirstName">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                        <div class = "form-group col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Visa</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Mastercard</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">American Express</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox4">Debito</label>
+                            </div>
+                        </div>
+                            <div class="form-group col-md-6">
+                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <p>Add any notes here</p> 
+                            </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </div>
+            <div class="card-footer text-muted text-right">
+                <button type="submit" class="btn btn-secondary pull-left">Cancel</button>
+                <button type="submit" class="btn btn-primary pull-right">Send</button>
+            </div>
+    </div>
+</body>
+</html> 
